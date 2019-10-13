@@ -20,7 +20,6 @@ setup(
     classifiers         = [
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: POSIX :: Linux",
         "Topic :: System :: Networking",
         "Topic :: Security",
         "Intended Audience :: Developers",
