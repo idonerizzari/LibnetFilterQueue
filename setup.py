@@ -1,7 +1,7 @@
 from distutils.core import setup, Extension
 from Cython.Distutils import build_ext
 
-VERSION = "0.8.2"
+VERSION = "3"
 
 cmd = { "build_ext": build_ext }
 ext = Extension( "libnetfilterqueue", sources=["libnetfilterqueue.pyx",], libraries=["netfilter_queue"], )
