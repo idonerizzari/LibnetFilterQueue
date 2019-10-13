@@ -5,7 +5,7 @@ function.
 Copyright: (c) 2011, Kerkhoff Technologies Inc.
 License: MIT; see LICENSE.txt
 """
-VERSION = (3)
+VERSION = (4)
 
 # Constants for module users
 COPY_NONE = 0

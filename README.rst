@@ -2,6 +2,9 @@
 NetfilterQueue
 ==============
 
+This is not my library but a clone of someonelse's. Please reach out to the owner for anything to do with this library. I have clone it to get the latest version compatable with python3
+into Pypi repo and some other bits for my specific use case.
+
 NetfilterQueue provides access to packets matched by an iptables rule in
 Linux. Packets so matched can be accepted, dropped, altered, or given a mark.
 

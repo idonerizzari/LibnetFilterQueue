@@ -1,24 +1,23 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 from Cython.Distutils import build_ext
 
-VERSION = "3"
+VERSION = "4"
 
 cmd = { "build_ext": build_ext }
-ext = Extension( "libnetfilterqueue", sources=["libnetfilterqueue.pyx",], libraries=["netfilter_queue"], )
+ext = Extension( "netfilterqueue", sources=["netfilterqueue.pyx",], libraries=["netfilter_queue"] )
 
 setup(
-    cmdclass = cmd,
-    ext_modules = [ext],
-    name="LibnetFilterQueue",
-    version=VERSION,
-    license="MIT",
-    author="Idone Rizzari",
-    author_email="rizzaricreative@icloud.com",
-    url="https://github.com/idonerizzari/LibnetFilterQueue",
-    description="Python bindings for libnetfilter_queue",
-    long_description=open("README.rst").read(),
-    download_url="http://pypi.python.org/packages/source/N/LibnetFilterQueue/LibnetFilterQueue-%s.tar.gz" % VERSION,
-    classifiers = [
+    cmdclass            = cmd,
+    ext_modules         = [ext],
+    name                = "LibnetFilterQueue",
+    version             = VERSION,
+    license             = "MIT",
+    author              = "Idone Rizzari",
+    author_email        = "rizzaricreative@icloud.com",
+    url                 = "https://github.com/idonerizzari/LibnetFilterQueue",
+    description         = "Python bindings for netfilter_queue",
+    long_description    = open("README.rst").read(),
+    classifiers         = [
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
